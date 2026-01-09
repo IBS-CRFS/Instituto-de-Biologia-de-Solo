@@ -16,11 +16,22 @@ Este repositório reúne conjuntos de dados, metadados, scripts e materiais supl
 
 ```
 .
-├── data/                          # Conjuntos de dados
+├── colecao-referencia/            # 🔬 Coleção de Referência da Fauna de Solos
+│   ├── darwin-core/               # Dados da coleção no padrão Darwin Core
+│   │   ├── occurrences.csv        # Registros de espécimes
+│   │   ├── taxonomy.csv           # Informações taxonômicas
+│   │   └── measurements.csv       # Medidas morfológicas
+│   ├── imagens/                   # Imagens dos espécimes
+│   └── documentacao/              # Protocolos e catálogo
+├── publications/                  # 📄 Projetos por Artigo Científico
+│   └── YYYY_autor_journal/        # Cada artigo em pasta separada
+│       ├── data/                  # Dados específicos do projeto
+│       ├── scripts/               # Análises reprodutíveis
+│       ├── results/               # Figuras e tabelas
+│       └── docs/                  # Documentação do projeto
+├── data/                          # Dados gerais do instituto
 │   ├── raw/                       # Dados brutos originais (imutáveis)
 │   └── processed/                 # Dados processados e análises
-├── publications/                  # Dados e materiais por publicação
-│   └── [ano_autor_journal]/       # Estrutura padronizada por artigo
 ├── metadata/                      # Metadados e esquemas
 │   └── schemas/                   # Esquemas de metadados (Darwin Core, etc.)
 ├── docs/                          # Documentação
@@ -31,6 +42,14 @@ Este repositório reúne conjuntos de dados, metadados, scripts e materiais supl
 ├── CHANGELOG.md                   # Histórico de versões
 └── README.md                      # Este arquivo
 ```
+
+### 🔬 Coleção de Referência
+
+A pasta `/colecao-referencia` contém a **base de dados completa** da coleção de espécimes, organizada no **padrão Darwin Core** para máxima interoperabilidade com GBIF, SiBBr e outros sistemas internacionais. Ver [colecao-referencia/README.md](colecao-referencia/README.md) para detalhes.
+
+### 📄 Projetos por Artigo
+
+Cada artigo científico tem sua **própria pasta** em `/publications` com estrutura padronizada contendo dados, scripts, resultados e documentação. Ver exemplo em [publications/EXEMPLO_2024_silva_ecology](publications/EXEMPLO_2024_silva_ecology) e template completo em [docs/templates/publication_structure_template.md](docs/templates/publication_structure_template.md).
 
 ## Dados e Metadados
 
@@ -53,6 +72,13 @@ Cada conjunto de dados inclui:
 - **Metadados**: Descrições completas seguindo padrões internacionais
 - **Scripts**: Código para processamento e análises (R, Python, etc.)
 - **Dicionário de dados**: Descrição de todas as variáveis
+
+### Acesso Rápido
+
+- 🔬 **Coleção de Referência**: Ver [colecao-referencia/README.md](colecao-referencia/README.md)
+- 📄 **Exemplo de Projeto**: Ver [publications/EXEMPLO_2024_silva_ecology/](publications/EXEMPLO_2024_silva_ecology/)
+- 📋 **Template Darwin Core**: Ver [metadata/schemas/darwin_core_template.csv](metadata/schemas/darwin_core_template.csv)
+- 📝 **Template de Projeto**: Ver [docs/templates/publication_structure_template.md](docs/templates/publication_structure_template.md)
 
 ## Licenciamento
 

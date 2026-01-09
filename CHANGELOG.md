@@ -7,6 +7,28 @@ e este projeto adere ao [Semantic Versioning](https://semver.org/lang/pt-BR/).
 
 ## [Unreleased]
 
+### Adicionado
+- Pasta `/colecao-referencia` com estrutura completa para base de dados da coleção
+  - Subpasta `darwin-core/` com arquivo de exemplo de ocorrências no padrão Darwin Core
+  - Subpasta `imagens/` para armazenamento de fotos dos espécimes
+  - Subpasta `documentacao/` para protocolos, catálogo e histórico
+  - README detalhado com instruções de uso, curadoria e integração GBIF/SiBBr
+- Exemplo completo de estrutura de projeto em `/publications/EXEMPLO_2024_silva_ecology`
+  - Estrutura padronizada com data/scripts/results/docs/environment
+  - README demonstrando como organizar projeto de artigo científico
+  - Pastas vazias com .gitkeep para manter estrutura
+- Links de acesso rápido no README principal para:
+  - Coleção de Referência
+  - Exemplo de projeto
+  - Templates Darwin Core e de projeto
+
+### Modificado
+- README.md principal atualizado com:
+  - Estrutura expandida incluindo pasta `colecao-referencia/`
+  - Destaque para separação de projetos por artigo científico
+  - Seção de acesso rápido para navegação facilitada
+  - Emojis para melhor identificação visual das seções
+
 ### Planejado
 - Integração com GBIF para sincronização automática de dados de ocorrência
 - API REST para acesso programático aos dados
