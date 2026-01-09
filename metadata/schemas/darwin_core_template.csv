@@ -1,0 +1,38 @@
+occurrenceID,basisOfRecord,scientificName,kingdom,phylum,class,order,family,genus,specificEpithet,scientificNameAuthorship,taxonRank,decimalLatitude,decimalLongitude,geodeticDatum,coordinateUncertaintyInMeters,countryCode,stateProvince,municipality,locality,eventDate,year,month,day,eventTime,habitat,samplingProtocol,sampleSizeValue,sampleSizeUnit,samplingEffort,recordedBy,identifiedBy,dateIdentified,occurrenceStatus,preparations,catalogNumber,recordNumber,associatedMedia,occurrenceRemarks,dataGeneralizations,informationWithheld
+"urn:uuid:example-001","PreservedSpecimen","Metaphire californica (Kinberg, 1867)","Animalia","Annelida","Clitellata","Opisthopora","Megascolecidae","Metaphire","californica","(Kinberg, 1867)","species",-23.5505,-46.6333,"WGS84",100,"BR","São Paulo","São Paulo","Parque Ibirapuera","2024-01-15","2024","01","15","10:30:00","Atlantic Forest fragment; urban park","Hand collection; 25x25cm quadrat",625,"cm²","1 person-hour","João Silva","Maria Santos","2024-01-20","present","Preserved in 70% ethanol","IBS-0001","JS-2024-001","https://example.com/photo001.jpg","Found under leaf litter","Coordinates rounded to 0.01 degrees","Exact locality withheld for sensitive species"
+
+# Darwin Core Standard Template for Soil Fauna Data
+# Instituto de Biologia do Solo e Coleção de Referência da Fauna de Solos
+# 
+# Este arquivo contém um exemplo de registro formatado segundo o padrão Darwin Core
+# para dados de ocorrência de fauna de solo.
+#
+# CAMPOS OBRIGATÓRIOS:
+# - occurrenceID: Identificador único global do registro (recomendado: UUID)
+# - basisOfRecord: Natureza do registro (PreservedSpecimen, HumanObservation, etc.)
+# - scientificName: Nome científico completo com autoria
+# - decimalLatitude: Latitude em graus decimais (WGS84)
+# - decimalLongitude: Longitude em graus decimais (WGS84)
+# - eventDate: Data da coleta no formato ISO 8601 (YYYY-MM-DD)
+#
+# CAMPOS ALTAMENTE RECOMENDADOS:
+# - kingdom, phylum, class, order, family, genus: Classificação taxonômica
+# - geodeticDatum: Sistema de coordenadas (WGS84, SIRGAS2000, etc.)
+# - coordinateUncertaintyInMeters: Incerteza da localização em metros
+# - countryCode: Código do país (ISO 3166-1 alpha-2)
+# - stateProvince: Estado/província
+# - municipality: Município
+# - locality: Descrição textual do local
+# - recordedBy: Nome do coletor
+# - identifiedBy: Nome de quem identificou o espécime
+# - samplingProtocol: Descrição do método de coleta
+#
+# CAMPOS PARA DADOS SENSÍVEIS:
+# - dataGeneralizations: Descrição de generalizações aplicadas (ex: coordenadas arredondadas)
+# - informationWithheld: Informações retidas por razões de conservação
+#
+# Para mais informações sobre termos Darwin Core:
+# https://dwc.tdwg.org/terms/
+#
+# Para guia de uso do Darwin Core:
+# https://github.com/tdwg/dwc/blob/master/terminology/simple-darwin-core/simple_darwin_core_guide.md

@@ -1,0 +1,65 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: >-
+  Instituto de Biologia do Solo e Coleção de Referência da
+  Fauna de Solos - Repositório de Dados
+message: >-
+  Se você utilizar dados deste repositório, por favor cite-o
+  usando os metadados deste arquivo.
+type: dataset
+authors:
+  - name: >-
+      Instituto de Biologia do Solo e Coleção de Referência
+      da Fauna de Solos
+    city: '[Cidade]'
+    country: BR
+    website: '[URL do instituto]'
+repository-code: >-
+  https://github.com/nathanufpb/Instituto-de-Biologia-de-Solo
+abstract: >-
+  Este repositório reúne conjuntos de dados, metadados,
+  scripts e materiais suplementares relacionados a estudos
+  de biologia do solo e fauna edáfica. O objetivo é garantir
+  transparência, reprodutibilidade e acesso aberto aos dados,
+  seguindo os princípios FAIR (Findable, Accessible,
+  Interoperable, Reusable) e as melhores práticas de ciência
+  aberta. Os dados seguem padrões internacionais como Darwin
+  Core para dados de biodiversidade, e são disponibilizados
+  sob licenças abertas (CC0/CC BY 4.0) para promover máxima
+  reutilização científica.
+keywords:
+  - biologia do solo
+  - fauna edáfica
+  - biodiversidade
+  - Darwin Core
+  - dados abertos
+  - ciência aberta
+  - reprodutibilidade
+  - taxonomia
+  - ecologia do solo
+  - coleções biológicas
+license: CC-BY-4.0
+license-url: 'https://creativecommons.org/licenses/by/4.0/'
+version: 1.0.0
+date-released: '2026-01-09'
+doi: 10.5281/zenodo.XXXXXXX
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.XXXXXXX
+    description: Zenodo DOI for this repository
+preferred-citation:
+  type: dataset
+  authors:
+    - name: >-
+        Instituto de Biologia do Solo e Coleção de Referência
+        da Fauna de Solos
+  title: >-
+    Instituto de Biologia do Solo e Coleção de Referência da
+    Fauna de Solos - Repositório de Dados
+  year: 2026
+  doi: 10.5281/zenodo.XXXXXXX
+  url: 'https://github.com/nathanufpb/Instituto-de-Biologia-de-Solo'
+  repository-code: >-
+    https://github.com/nathanufpb/Instituto-de-Biologia-de-Solo

@@ -1,0 +1,141 @@
+{
+  "title": "",
+  "description": "",
+  "creators": [
+    {
+      "name": "",
+      "affiliation": "",
+      "orcid": "",
+      "email": ""
+    }
+  ],
+  "contributors": [
+    {
+      "name": "",
+      "affiliation": "",
+      "role": "",
+      "orcid": ""
+    }
+  ],
+  "keywords": [],
+  "subjects": [],
+  "language": "pt-BR",
+  "version": "1.0.0",
+  "date_created": "YYYY-MM-DD",
+  "date_published": "YYYY-MM-DD",
+  "date_modified": "YYYY-MM-DD",
+  "license": "CC0-1.0 ou CC-BY-4.0",
+  "rights": "Descrição adicional de direitos e restrições, se aplicável",
+  "temporal_coverage": {
+    "start_date": "YYYY-MM-DD",
+    "end_date": "YYYY-MM-DD",
+    "description": "Período de coleta ou geração dos dados"
+  },
+  "spatial_coverage": {
+    "description": "Descrição textual da área de estudo",
+    "geographic_description": "Nome do local, região, bioma",
+    "bounding_box": {
+      "north": 0.0,
+      "south": 0.0,
+      "east": 0.0,
+      "west": 0.0
+    },
+    "coordinate_system": "WGS84",
+    "countries": ["Brasil"],
+    "states": [],
+    "municipalities": []
+  },
+  "taxonomic_coverage": {
+    "general_description": "Descrição geral dos grupos taxonômicos incluídos",
+    "taxa": [
+      {
+        "rank": "Kingdom/Phylum/Class/Order/Family/Genus/Species",
+        "scientific_name": "",
+        "common_name": ""
+      }
+    ]
+  },
+  "methodology": {
+    "description": "Descrição detalhada dos métodos de coleta/geração dos dados",
+    "sampling_description": "Desenho amostral e métodos de coleta",
+    "quality_control": "Procedimentos de controle de qualidade aplicados",
+    "instruments": ["Lista de equipamentos e instrumentos utilizados"],
+    "references": ["Referências a protocolos ou métodos publicados"]
+  },
+  "data_structure": {
+    "format": "CSV/JSON/Excel/etc",
+    "encoding": "UTF-8",
+    "delimiter": ",",
+    "number_of_records": 0,
+    "number_of_variables": 0,
+    "file_size": "em bytes ou formato legível"
+  },
+  "variables": [
+    {
+      "name": "nome_da_variável",
+      "description": "Descrição completa da variável",
+      "type": "numeric/string/date/boolean",
+      "unit": "unidade de medida, se aplicável",
+      "missing_value_code": "código para valores ausentes (ex: NA, -999)",
+      "allowed_values": ["lista de valores permitidos, se aplicável"],
+      "minimum": "valor mínimo, para variáveis numéricas",
+      "maximum": "valor máximo, para variáveis numéricas"
+    }
+  ],
+  "related_resources": {
+    "publications": [
+      {
+        "citation": "Citação completa",
+        "doi": "DOI da publicação",
+        "relationship": "isSupplementTo/isReferencedBy/isCitedBy"
+      }
+    ],
+    "datasets": [
+      {
+        "title": "Título do dataset relacionado",
+        "doi": "DOI do dataset",
+        "relationship": "isDerivedFrom/isSourceOf/isVersionOf"
+      }
+    ],
+    "code_repository": "URL do repositório de código, se aplicável"
+  },
+  "funding": [
+    {
+      "agency": "Nome da agência financiadora",
+      "grant_number": "Número do projeto/processo",
+      "program": "Nome do programa de financiamento"
+    }
+  ],
+  "provenance": {
+    "source": "Origem dos dados (coleta primária, compilação, etc.)",
+    "collection_method": "Método de coleta",
+    "processing_steps": [
+      "Lista de etapas de processamento aplicadas aos dados brutos"
+    ],
+    "quality_assurance": "Procedimentos de garantia de qualidade"
+  },
+  "access_information": {
+    "embargo_date": "YYYY-MM-DD ou null se sem embargo",
+    "access_restrictions": "Descrição de restrições de acesso, se houver",
+    "data_sensitivity": "Indicação de dados sensíveis (espécies ameaçadas, etc.)",
+    "use_restrictions": "Restrições de uso além da licença"
+  },
+  "preservation": {
+    "repository": "Zenodo/GitHub/outro",
+    "identifier": "DOI ou identificador permanente",
+    "backup_location": "Localização de backups adicionais",
+    "preservation_plan": "Plano de preservação a longo prazo"
+  },
+  "contact": {
+    "name": "Nome do contato principal",
+    "email": "",
+    "institution": "",
+    "orcid": "",
+    "address": ""
+  },
+  "additional_metadata": {
+    "notes": "Notas adicionais sobre o dataset",
+    "acknowledgments": "Agradecimentos a colaboradores e instituições",
+    "changelog": "Histórico de versões e mudanças"
+  }
+}
