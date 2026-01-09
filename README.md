@@ -22,13 +22,30 @@ Este repositório reúne conjuntos de dados, metadados, scripts e materiais supl
 │   │   ├── taxonomy.csv           # Informações taxonômicas
 │   │   └── measurements.csv       # Medidas morfológicas
 │   ├── imagens/                   # Imagens dos espécimes
-│   └── documentacao/              # Protocolos e catálogo
+│   ├── documentacao/              # Protocolos e catálogo
+│   └── emprestimos/               # 📬 Gestão de empréstimos
+│       ├── cartas-enviadas/       # Correspondências enviadas
+│       ├── cartas-recebidas/      # Correspondências recebidas
+│       └── registros/             # Registro de empréstimos
+├── templates-institucionais/      # 🎨 Templates Oficiais do IBS
+│   ├── logotipos/                 # Logotipos institucionais
+│   │   ├── principal/            # Logo principal (SVG, PNG, PDF)
+│   │   └── variantes/            # Versões alternativas
+│   ├── cartas/                    # Modelos de cartas oficiais
+│   │   ├── timbradas/            # Papel timbrado
+│   │   └── solicitacoes/         # Templates de solicitação
+│   └── assinaturas/               # Assinaturas de email
 ├── publications/                  # 📄 Projetos por Artigo Científico
 │   └── YYYY_autor_journal/        # Cada artigo em pasta separada
-│       ├── data/                  # Dados específicos do projeto
+│       ├── data/                  # Dados específicos (raw/processed/metadata)
 │       ├── scripts/               # Análises reprodutíveis
+│       ├── mapas/                 # 🗺️ Mapas e dados espaciais
+│       ├── imagens-pranchas/      # 📷 Pranchas e fotografias
+│       ├── manuscritos/           # 📝 Versões do manuscrito
+│       ├── taxonomia-delta/       # 🔬 Sistema DELTA para taxonomia
 │       ├── results/               # Figuras e tabelas
-│       └── docs/                  # Documentação do projeto
+│       ├── docs/                  # Documentação do projeto
+│       └── environment/           # Reprodutibilidade
 ├── data/                          # Dados gerais do instituto
 │   ├── raw/                       # Dados brutos originais (imutáveis)
 │   └── processed/                 # Dados processados e análises
@@ -45,11 +62,15 @@ Este repositório reúne conjuntos de dados, metadados, scripts e materiais supl
 
 ### 🔬 Coleção de Referência
 
-A pasta `/colecao-referencia` contém a **base de dados completa** da coleção de espécimes, organizada no **padrão Darwin Core** para máxima interoperabilidade com GBIF, SiBBr e outros sistemas internacionais. Ver [colecao-referencia/README.md](colecao-referencia/README.md) para detalhes.
+A pasta `/colecao-referencia` contém a **base de dados completa** da coleção de espécimes, organizada no **padrão Darwin Core** para máxima interoperabilidade com GBIF, SiBBr e outros sistemas internacionais. Inclui também o sistema de gestão de **empréstimos** com controle de correspondências e registros. Ver [colecao-referencia/README.md](colecao-referencia/README.md) para detalhes.
+
+### 🎨 Templates Institucionais
+
+A pasta `/templates-institucionais` contém todos os recursos visuais e documentais oficiais do IBS: **logotipos** em múltiplos formatos, **modelos de cartas** oficiais, e **assinaturas de email** padronizadas. Ver [templates-institucionais/README.md](templates-institucionais/README.md) para guia de uso.
 
 ### 📄 Projetos por Artigo
 
-Cada artigo científico tem sua **própria pasta** em `/publications` com estrutura padronizada contendo dados, scripts, resultados e documentação. Ver exemplo em [publications/EXEMPLO_2024_silva_ecology](publications/EXEMPLO_2024_silva_ecology) e template completo em [docs/templates/publication_structure_template.md](docs/templates/publication_structure_template.md).
+Cada artigo científico tem sua **própria pasta** em `/publications` com estrutura padronizada contendo dados, scripts, **mapas**, **imagens e pranchas**, **manuscritos**, **taxonomia DELTA**, resultados e documentação completa. Ver exemplo em [publications/EXEMPLO_2024_silva_ecology](publications/EXEMPLO_2024_silva_ecology) e template completo em [docs/templates/publication_structure_template.md](docs/templates/publication_structure_template.md).
 
 ## Dados e Metadados
 
@@ -76,7 +97,9 @@ Cada conjunto de dados inclui:
 ### Acesso Rápido
 
 - 🔬 **Coleção de Referência**: Ver [colecao-referencia/README.md](colecao-referencia/README.md)
-- 📄 **Exemplo de Projeto**: Ver [publications/EXEMPLO_2024_silva_ecology/](publications/EXEMPLO_2024_silva_ecology/)
+- 📬 **Gestão de Empréstimos**: Ver [colecao-referencia/emprestimos/README.md](colecao-referencia/emprestimos/README.md)
+- 🎨 **Templates Institucionais**: Ver [templates-institucionais/README.md](templates-institucionais/README.md)
+- 📄 **Exemplo de Projeto Completo**: Ver [publications/EXEMPLO_2024_silva_ecology/](publications/EXEMPLO_2024_silva_ecology/)
 - 📋 **Template Darwin Core**: Ver [metadata/schemas/darwin_core_template.csv](metadata/schemas/darwin_core_template.csv)
 - 📝 **Template de Projeto**: Ver [docs/templates/publication_structure_template.md](docs/templates/publication_structure_template.md)
 

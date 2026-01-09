@@ -16,15 +16,38 @@ EXEMPLO_2024_silva_ecology/
 │   │   ├── field_data.csv
 │   │   ├── soil_samples.csv
 │   │   └── specimen_counts.csv
-│   └── processed/              # Dados processados
-│       ├── community_matrix.csv
-│       ├── environmental_vars.csv
-│       └── diversity_metrics.csv
+│   ├── processed/              # Dados processados
+│   │   ├── community_matrix.csv
+│   │   ├── environmental_vars.csv
+│   │   └── diversity_metrics.csv
+│   └── metadata/               # Metadados do projeto
+│       ├── metadata.json
+│       └── data_dictionary.csv
 ├── scripts/                    # Scripts de análise
 │   ├── 01_data_cleaning.R
 │   ├── 02_diversity_analysis.R
 │   ├── 03_statistical_models.R
 │   └── 04_figures_generation.R
+├── mapas/                      # Mapas e dados espaciais
+│   ├── site_locations.shp
+│   ├── fragments_boundaries.shp
+│   ├── mapa_area_estudo.pdf
+│   └── mapa_pontos_coleta.pdf
+├── imagens-pranchas/           # Pranchas de figuras e fotos
+│   ├── prancha_especies.pdf
+│   ├── fotos_campo/
+│   └── fotos_laboratorio/
+├── manuscritos/                # Versões do manuscrito
+│   ├── v1_submitted.docx
+│   ├── v2_revised.docx
+│   ├── final_accepted.pdf
+│   └── supplementary_material.pdf
+├── taxonomia-delta/            # Dados taxonômicos (sistema DELTA)
+│   ├── chars                   # Arquivo de caracteres
+│   ├── items                   # Arquivo de táxons
+│   ├── specs                   # Especificações
+│   ├── intkey.ink             # Chave interativa
+│   └── descriptions.txt        # Descrições geradas
 ├── results/                    # Resultados
 │   ├── figures/
 │   │   ├── figure1_map.pdf
@@ -37,10 +60,12 @@ EXEMPLO_2024_silva_ecology/
 │       └── tableS1_species_list.csv
 ├── docs/                       # Documentação
 │   ├── methods_extended.md
-│   └── analysis_notes.md
+│   ├── analysis_notes.md
+│   └── field_protocol.md
 └── environment/                # Ambiente reprodutível
     ├── renv.lock
-    └── sessionInfo.txt
+    ├── sessionInfo.txt
+    └── system_info.txt
 ```
 
 ## Resumo do Projeto
@@ -110,6 +135,87 @@ Localizados em `data/processed/`:
 - **community_matrix.csv**: Matriz de abundância espécie × sítio
 - **environmental_vars.csv**: Variáveis ambientais padronizadas
 - **diversity_metrics.csv**: Índices de diversidade calculados
+
+### Metadados
+
+Localizados em `data/metadata/`:
+
+- **metadata.json**: Metadados completos do projeto seguindo padrão institucional
+- **data_dictionary.csv**: Dicionário de dados com descrição de todas as variáveis
+
+## Mapas (`/mapas`)
+
+Contém todos os dados espaciais e mapas do projeto:
+
+### Shapefiles
+- **site_locations.shp**: Pontos de coleta com coordenadas
+- **fragments_boundaries.shp**: Limites dos fragmentos florestais
+
+### Mapas Finais
+- **mapa_area_estudo.pdf**: Mapa da área de estudo (para publicação)
+- **mapa_pontos_coleta.pdf**: Mapa com localização das coletas
+
+**Software usado**: QGIS 3.28, R (pacotes: sf, tmap, ggplot2)
+
+## Imagens e Pranchas (`/imagens-pranchas`)
+
+### Pranchas de Figuras
+- **prancha_especies.pdf**: Prancha com fotos das espécies principais
+- Figuras compostas para material suplementar
+
+### Fotos de Campo
+Pasta `fotos_campo/` contém:
+- Fotos dos sítios de coleta
+- Habitat e vegetação
+- Processo de coleta
+
+### Fotos de Laboratório
+Pasta `fotos_laboratorio/` contém:
+- Fotos dos espécimes
+- Estruturas diagnósticas
+- Material preservado
+
+**Formato**: JPEG (alta qualidade, 300 DPI)  
+**Nomenclatura**: `YYYY-MM-DD_local_tipo_sequencia.jpg`
+
+## Manuscritos (`/manuscritos`)
+
+Histórico de versões do manuscrito:
+
+| Arquivo | Status | Data |
+|---------|--------|------|
+| v1_submitted.docx | Submetido | 2024-03-01 |
+| v2_revised.docx | Revisado após peer review | 2024-04-15 |
+| final_accepted.pdf | Versão final aceita | 2024-05-01 |
+| supplementary_material.pdf | Material suplementar | 2024-05-01 |
+
+**Importante**: Apenas versões finais e aceitas são públicas. Versões intermediárias são para controle interno.
+
+## Taxonomia DELTA (`/taxonomia-delta`)
+
+Sistema DELTA (DEscription Language for TAxonomy) para descrições taxonômicas:
+
+### Arquivos DELTA
+- **chars**: Arquivo de caracteres taxonômicos
+- **items**: Arquivo de táxons (espécies) descritos
+- **specs**: Especificações e configurações
+- **intkey.ink**: Chave interativa de identificação
+- **descriptions.txt**: Descrições padronizadas geradas
+
+### Uso
+```bash
+# Gerar descrições
+delta intkey.ink
+
+# Criar chave interativa
+intkey intkey.ink
+```
+
+### Referência
+DELTA system: https://www.delta-intkey.com/
+
+**Caracteres codificados**: 45 caracteres morfológicos  
+**Táxons incluídos**: 28 espécies de fauna de solo
 
 ## Scripts
 

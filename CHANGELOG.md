@@ -12,22 +12,53 @@ e este projeto adere ao [Semantic Versioning](https://semver.org/lang/pt-BR/).
   - Subpasta `darwin-core/` com arquivo de exemplo de ocorrências no padrão Darwin Core
   - Subpasta `imagens/` para armazenamento de fotos dos espécimes
   - Subpasta `documentacao/` para protocolos, catálogo e histórico
+  - **Subpasta `emprestimos/`** para gestão completa de empréstimos:
+    - `cartas-enviadas/` - Correspondências enviadas pelo IBS
+    - `cartas-recebidas/` - Correspondências recebidas
+    - `registros/` - Planilha central de controle de empréstimos
+    - README completo (7,418 caracteres) com políticas, processos e templates
   - README detalhado com instruções de uso, curadoria e integração GBIF/SiBBr
+- **Pasta `/templates-institucionais`** com recursos visuais e documentais oficiais:
+  - `logotipos/` - Logotipos do IBS em múltiplos formatos (SVG, PNG, PDF, EPS)
+    - `principal/` - Logo principal em várias resoluções
+    - `variantes/` - Versões monocromáticas e alternativas
+    - `uso/` - Manual de identidade visual
+  - `cartas/` - Modelos de cartas oficiais
+    - `timbradas/` - Papel timbrado institucional
+    - `solicitacoes/` - Templates de solicitação
+    - `respostas/` - Templates de resposta
+    - `administrativas/` - Cartas administrativas
+  - `assinaturas/` - Assinaturas de email padronizadas (HTML)
+  - README completo (8,041 caracteres) com guias de uso e diretrizes de marca
 - Exemplo completo de estrutura de projeto em `/publications/EXEMPLO_2024_silva_ecology`
   - Estrutura padronizada com data/scripts/results/docs/environment
-  - README demonstrando como organizar projeto de artigo científico
+  - **Pastas adicionadas para projetos completos**:
+    - `mapas/` - Dados espaciais e mapas (shapefiles, PDFs)
+    - `imagens-pranchas/` - Pranchas de figuras e fotografias de campo/laboratório
+    - `manuscritos/` - Versões do manuscrito (submetido, revisado, aceito)
+    - `taxonomia-delta/` - Sistema DELTA para descrições taxonômicas
+    - `data/metadata/` - Metadados do projeto e dicionário de dados
+  - README demonstrando como organizar projeto de artigo científico (expandido)
   - Pastas vazias com .gitkeep para manter estrutura
 - Links de acesso rápido no README principal para:
   - Coleção de Referência
-  - Exemplo de projeto
+  - Gestão de Empréstimos
+  - Templates Institucionais
+  - Exemplo de projeto completo
   - Templates Darwin Core e de projeto
 
 ### Modificado
 - README.md principal atualizado com:
-  - Estrutura expandida incluindo pasta `colecao-referencia/`
-  - Destaque para separação de projetos por artigo científico
-  - Seção de acesso rápido para navegação facilitada
+  - Estrutura expandida incluindo `colecao-referencia/emprestimos/` e `templates-institucionais/`
+  - Destaque para sistema de gestão de empréstimos
+  - Inclusão de templates institucionais (logotipos e cartas)
+  - Estrutura de projeto expandida com mapas, imagens, manuscritos e DELTA
+  - Seção de acesso rápido atualizada com novos recursos
   - Emojis para melhor identificação visual das seções
+- README do projeto exemplo atualizado com:
+  - Documentação completa de todas as novas pastas
+  - Instruções de uso de mapas, imagens, manuscritos e DELTA
+  - Metadados de projeto incluídos
 
 ### Planejado
 - Integração com GBIF para sincronização automática de dados de ocorrência
