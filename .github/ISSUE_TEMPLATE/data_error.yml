@@ -1,0 +1,77 @@
+name: 🐛 Reportar Erro nos Dados
+description: Reportar erro, inconsistência ou problema em dados existentes
+title: "[ERRO DADOS] "
+labels: ["bug", "dados"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Obrigado por ajudar a melhorar a qualidade dos nossos dados!
+        
+  - type: input
+    id: dataset
+    attributes:
+      label: Dataset Afetado
+      description: Qual conjunto de dados contém o erro?
+      placeholder: "Ex: data/processed/fauna_mata_atlantica.csv"
+    validations:
+      required: true
+      
+  - type: textarea
+    id: description
+    attributes:
+      label: Descrição do Erro
+      description: Descreva claramente o problema encontrado
+      placeholder: "Ex: Coordenadas geográficas fora dos limites do Brasil"
+    validations:
+      required: true
+      
+  - type: textarea
+    id: location
+    attributes:
+      label: Localização do Erro
+      description: Onde especificamente está o erro?
+      placeholder: |
+        Arquivo: data/processed/fauna.csv
+        Linhas: 45-47
+        Campo(s): decimalLatitude, decimalLongitude
+    validations:
+      required: true
+      
+  - type: textarea
+    id: expected
+    attributes:
+      label: Valor Esperado
+      description: Qual deveria ser o valor correto?
+      placeholder: "Ex: decimalLatitude: -23.5505 (não -23.5505.0)"
+    validations:
+      required: true
+      
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidência/Referências
+      description: Links, referências ou evidências que suportam a correção
+      placeholder: |
+        - Link para base de dados taxonômica
+        - Referência bibliográfica
+        - Coordenadas corretas de mapa
+        
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severidade
+      description: Quão crítico é este erro?
+      options:
+        - Crítico (afeta resultados/conclusões)
+        - Alto (erro significativo mas não crítico)
+        - Médio (inconsistência menor)
+        - Baixo (problema estético/formatação)
+    validations:
+      required: true
+      
+  - type: textarea
+    id: context
+    attributes:
+      label: Contexto Adicional
+      description: Qualquer outra informação relevante

@@ -1,0 +1,144 @@
+name: 📊 Submeter Dados
+description: Propor adição de novo conjunto de dados ao repositório
+title: "[DADOS] "
+labels: ["dados", "contribuição"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Obrigado por contribuir com dados para o repositório!
+        
+        **Antes de submeter**, consulte nosso [Guia de Contribuição](https://github.com/nathanufpb/Instituto-de-Biologia-de-Solo/blob/main/CONTRIBUTING.md).
+        
+  - type: input
+    id: title
+    attributes:
+      label: Título do Dataset
+      description: Título descritivo do conjunto de dados
+      placeholder: "Ex: Fauna de Solo da Mata Atlântica - Coleta 2024"
+    validations:
+      required: true
+      
+  - type: textarea
+    id: description
+    attributes:
+      label: Descrição
+      description: Descrição detalhada do conjunto de dados
+      placeholder: |
+        Descreva:
+        - Tipo de dados (ocorrências, medições, etc.)
+        - Área de estudo
+        - Período temporal
+        - Grupos taxonômicos
+        - Métodos de coleta
+    validations:
+      required: true
+      
+  - type: dropdown
+    id: data_type
+    attributes:
+      label: Tipo de Dados
+      description: Qual tipo de dados você está submetendo?
+      options:
+        - Dados de ocorrência (presença/ausência)
+        - Dados morfológicos/morfométricos
+        - Dados ambientais
+        - Dados moleculares/genéticos
+        - Dados de coleção (espécimes)
+        - Imagens/fotografias
+        - Outro
+    validations:
+      required: true
+      
+  - type: input
+    id: records
+    attributes:
+      label: Número de Registros
+      description: Quantos registros/linhas o dataset contém?
+      placeholder: "Ex: 500"
+      
+  - type: dropdown
+    id: format
+    attributes:
+      label: Formato dos Dados
+      description: Em que formato estão os dados?
+      options:
+        - CSV
+        - Excel (.xlsx)
+        - JSON
+        - Darwin Core Archive
+        - Shapefile/GeoJSON
+        - Outro
+    validations:
+      required: true
+      
+  - type: dropdown
+    id: darwin_core
+    attributes:
+      label: Padrão Darwin Core
+      description: Os dados seguem o padrão Darwin Core?
+      options:
+        - Sim, já estão em Darwin Core
+        - Não, mas podem ser convertidos
+        - Não aplicável (não são dados de biodiversidade)
+    validations:
+      required: true
+      
+  - type: dropdown
+    id: license
+    attributes:
+      label: Licença Proposta
+      description: Sob qual licença você quer disponibilizar os dados?
+      options:
+        - CC0 1.0 (domínio público - recomendado para dados factuais)
+        - CC BY 4.0 (atribuição requerida)
+        - Preciso de ajuda para decidir
+    validations:
+      required: true
+      
+  - type: textarea
+    id: metadata
+    attributes:
+      label: Metadados Disponíveis
+      description: Quais metadados você já tem preparados?
+      placeholder: |
+        - [ ] Dicionário de dados (descrição de campos)
+        - [ ] Métodos de coleta documentados
+        - [ ] Coordenadas geográficas (quando aplicável)
+        - [ ] Classificação taxonômica
+        - [ ] Informações temporais
+        - [ ] Informações de financiamento
+        
+  - type: textarea
+    id: related_publication
+    attributes:
+      label: Publicação Relacionada
+      description: Estes dados estão relacionados a alguma publicação?
+      placeholder: |
+        Citação completa e DOI (se disponível)
+        
+  - type: input
+    id: contact
+    attributes:
+      label: ORCID do Responsável
+      description: ORCID do pesquisador responsável pelos dados
+      placeholder: "0000-0000-0000-0000"
+      
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      description: Confirme que você tem o seguinte preparado
+      options:
+        - label: Dados em formato aberto (CSV, JSON, etc.)
+        - label: Metadados completos (template em /docs/templates/)
+        - label: Dicionário de dados
+        - label: Licença definida
+        - label: Permissão para compartilhar os dados
+        - label: Dados sensíveis foram tratados apropriadamente
+        
+  - type: textarea
+    id: additional
+    attributes:
+      label: Informações Adicionais
+      description: Qualquer outra informação relevante

@@ -1,0 +1,156 @@
+# Instituto de Biologia do Solo - .gitignore
+# ============================================
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.swp
+*~
+.DS_Store
+Thumbs.db
+
+# R specific
+# -----------
+.Rhistory
+.RData
+.Rproj.user/
+.Rproj
+*.Rproj
+*.rds
+*.rda
+renv/library/
+renv/local/
+renv/staging/
+
+# Python specific
+# ---------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+venv/
+env/
+ENV/
+.venv
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb_checkpoints/
+
+# IDEs and Editors
+# ----------------
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.code-workspace
+
+# OS specific
+# -----------
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Desktop.ini
+
+# Large data files (should be in Zenodo instead)
+# ----------------------------------------------
+# Uncomment patterns for files that should not be in Git
+# *.csv
+# *.xlsx
+# *.rds
+# *.rda
+# *.feather
+# *.parquet
+
+# Specific large files (example)
+# data/raw/large_dataset.csv
+# results/huge_model.rds
+
+# Sensitive information
+# ---------------------
+*.env
+.env.local
+.env.*.local
+secrets/
+credentials/
+*.key
+*.pem
+*.cert
+
+# Documentation build outputs
+# ---------------------------
+_site/
+.jekyll-cache/
+.jekyll-metadata
+docs/_build/
+docs/.doctrees/
+
+# Log files
+# ---------
+*.log
+logs/
+
+# Coverage and test reports
+# --------------------------
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Compiled source
+# ---------------
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Archives (should be explicit)
+# ------------------------------
+# Uncomment if you don't want to track archives
+# *.7z
+# *.dmg
+# *.gz
+# *.iso
+# *.jar
+# *.rar
+# *.tar
+# *.zip
+
+# Personal notes (not for public repo)
+# -------------------------------------
+NOTES.md
+TODO.txt
+personal/
+scratch/
+
+# System files
+# ------------
+.fuse_hidden*
