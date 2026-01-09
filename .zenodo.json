@@ -1,0 +1,47 @@
+{
+  "title": "Instituto de Biologia do Solo e Coleção de Referência da Fauna de Solos - Repositório de Dados",
+  "description": "Este repositório reúne conjuntos de dados, metadados, scripts e materiais suplementares relacionados a estudos de biologia do solo e fauna edáfica. O objetivo é garantir transparência, reprodutibilidade e acesso aberto aos dados, seguindo os princípios FAIR (Findable, Accessible, Interoperable, Reusable) e as melhores práticas de ciência aberta. Os dados seguem padrões internacionais como Darwin Core para dados de biodiversidade.",
+  "creators": [
+    {
+      "name": "Instituto de Biologia do Solo e Coleção de Referência da Fauna de Solos"
+    }
+  ],
+  "contributors": [],
+  "keywords": [
+    "biologia do solo",
+    "fauna edáfica",
+    "biodiversidade",
+    "Darwin Core",
+    "dados abertos",
+    "ciência aberta",
+    "reprodutibilidade",
+    "taxonomia",
+    "ecologia do solo",
+    "coleções biológicas",
+    "FAIR data",
+    "metadados",
+    "Brasil",
+    "soil biology",
+    "soil fauna",
+    "biodiversity",
+    "open science",
+    "open data"
+  ],
+  "license": {
+    "id": "CC-BY-4.0"
+  },
+  "upload_type": "dataset",
+  "access_right": "open",
+  "communities": [
+    {
+      "identifier": "biosyslit"
+    },
+    {
+      "identifier": "zenodo"
+    }
+  ],
+  "grants": [],
+  "related_identifiers": [],
+  "language": "por",
+  "notes": "Este repositório contém dados de pesquisa em biologia do solo, incluindo registros de ocorrência de fauna edáfica, dados morfológicos, ambientais e moleculares. Os dados são disponibilizados sob licenças abertas (CC0 para dados factuais, CC BY 4.0 para dados curados) para promover máxima reutilização científica. Para mais informações, visite: https://github.com/nathanufpb/Instituto-de-Biologia-de-Solo"
+}

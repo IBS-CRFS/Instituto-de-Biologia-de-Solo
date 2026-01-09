@@ -10,6 +10,8 @@ O **Instituto de Biologia do Solo e Coleção de Referência da Fauna de Solos**
 
 Este repositório reúne conjuntos de dados, metadados, scripts e materiais suplementares utilizados em artigos científicos, relatórios técnicos e outros produtos acadêmicos. O objetivo é garantir **transparência**, **reprodutibilidade** e **acesso aberto** aos dados, em conformidade com os princípios FAIR (Findable, Accessible, Interoperable, Reusable) e as melhores práticas de ciência aberta.
 
+📚 **[Guia de Início Rápido](docs/QUICK_START.md)** | 📖 [Documentação Completa](#documentação) | 🤝 [Como Contribuir](CONTRIBUTING.md)
+
 ## Estrutura do Repositório
 
 ```
@@ -147,6 +149,19 @@ Contribuições são bem-vindas! Consulte [CONTRIBUTING.md](CONTRIBUTING.md) par
 - Como submeter dados
 - Padrões de qualidade
 - Processo de revisão
+
+## Documentação
+
+| Documento | Descrição |
+|-----------|-----------|
+| [QUICK_START.md](docs/QUICK_START.md) | Guia de início rápido (comece aqui!) |
+| [DATA_POLICY.md](DATA_POLICY.md) | Política completa de dados abertos |
+| [CONTRIBUTING.md](CONTRIBUTING.md) | Como contribuir com dados e código |
+| [CITATION.cff](CITATION.cff) | Arquivo de citação formal |
+| [CHANGELOG.md](CHANGELOG.md) | Histórico de versões |
+| [ZENODO_INTEGRATION.md](docs/ZENODO_INTEGRATION.md) | Guia de integração com Zenodo |
+| [data/README.md](data/README.md) | Guia do diretório de dados |
+| [publications/README.md](publications/README.md) | Guia do diretório de publicações |
 
 ## Contato
 

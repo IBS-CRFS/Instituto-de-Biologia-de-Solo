@@ -1,0 +1,63 @@
+name: 💡 Sugestão de Melhoria
+description: Sugerir melhorias na documentação, estrutura ou processos
+title: "[MELHORIA] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Obrigado por ajudar a melhorar o repositório!
+        
+  - type: dropdown
+    id: area
+    attributes:
+      label: Área da Melhoria
+      description: Qual área você quer melhorar?
+      options:
+        - Documentação
+        - Estrutura do repositório
+        - Templates/modelos
+        - Processos/workflows
+        - Metadados/esquemas
+        - Scripts/código
+        - Outro
+    validations:
+      required: true
+      
+  - type: textarea
+    id: description
+    attributes:
+      label: Descrição da Melhoria
+      description: Descreva sua sugestão de melhoria
+      placeholder: "Seja específico sobre o que você quer melhorar e por quê"
+    validations:
+      required: true
+      
+  - type: textarea
+    id: benefit
+    attributes:
+      label: Benefício
+      description: Como essa melhoria beneficiaria o repositório?
+      placeholder: |
+        - Melhor usabilidade
+        - Maior conformidade com padrões
+        - Facilita contribuições
+        - etc.
+        
+  - type: textarea
+    id: implementation
+    attributes:
+      label: Implementação Sugerida
+      description: Como você imagina que isso poderia ser implementado?
+      
+  - type: textarea
+    id: examples
+    attributes:
+      label: Exemplos ou Referências
+      description: Links para exemplos ou referências que inspiraram sua sugestão
+      
+  - type: textarea
+    id: additional
+    attributes:
+      label: Contexto Adicional
+      description: Qualquer outra informação relevante

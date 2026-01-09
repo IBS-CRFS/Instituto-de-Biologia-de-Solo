@@ -1,0 +1,55 @@
+name: ❓ Pergunta
+description: Fazer uma pergunta sobre os dados, código ou documentação
+title: "[PERGUNTA] "
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Tem uma pergunta? Estamos aqui para ajudar!
+        
+        **Antes de perguntar**, verifique se sua dúvida já foi respondida em:
+        - [Guia de Início Rápido](https://github.com/nathanufpb/Instituto-de-Biologia-de-Solo/blob/main/docs/QUICK_START.md)
+        - [README principal](https://github.com/nathanufpb/Instituto-de-Biologia-de-Solo/blob/main/README.md)
+        - [Issues fechadas](https://github.com/nathanufpb/Instituto-de-Biologia-de-Solo/issues?q=is%3Aissue+is%3Aclosed)
+        
+  - type: dropdown
+    id: topic
+    attributes:
+      label: Tópico
+      description: Sobre o que é sua pergunta?
+      options:
+        - Uso de dados
+        - Citação
+        - Licenciamento
+        - Contribuição de dados
+        - Metadados/Darwin Core
+        - Scripts/código
+        - Zenodo/DOI
+        - Outro
+    validations:
+      required: true
+      
+  - type: textarea
+    id: question
+    attributes:
+      label: Sua Pergunta
+      description: Faça sua pergunta de forma clara e detalhada
+    validations:
+      required: true
+      
+  - type: textarea
+    id: context
+    attributes:
+      label: Contexto
+      description: Forneça contexto adicional se necessário
+      placeholder: |
+        - O que você está tentando fazer?
+        - O que você já tentou?
+        - Onde você procurou por resposta?
+        
+  - type: textarea
+    id: additional
+    attributes:
+      label: Informações Adicionais
+      description: Qualquer outra informação relevante
