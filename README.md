@@ -1,6 +1,6 @@
 # Instituto de Biologia do Solo e Coleção de Referência da Fauna de Solos
 
-[![DOI](https://doi.org/10.15468/pbxmgz)](https://doi.org/10.15468/pbxmgz)
+[![DOI](https://zenodo.org/badge/DOI/10.15468/pbxmgz.svg)](https://doi.org/10.15468/pbxmgz)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 [![License: CC0](https://img.shields.io/badge/License-CC0%201.0-lightgrey.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
 
