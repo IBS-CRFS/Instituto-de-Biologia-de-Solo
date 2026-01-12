@@ -1,6 +1,6 @@
 # Instituto de Biologia do Solo e Coleção de Referência da Fauna de Solos
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXXXX)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXX.svg)](https://doi.org/10.15468/pbxmgz)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 [![License: CC0](https://img.shields.io/badge/License-CC0%201.0-lightgrey.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
 
@@ -124,7 +124,7 @@ Para citar este repositório como um todo, use o formato:
 
 ```
 Instituto de Biologia do Solo e Coleção de Referência da Fauna de Solos. (YYYY). 
-[Título do dataset]. Zenodo. https://doi.org/10.5281/zenodo.XXXXXXX
+[Título do dataset]. Zenodo. https://doi.org/10.15468/pbxmgz
 ```
 
 ### Citação de Conjuntos de Dados Específicos
@@ -139,8 +139,8 @@ Cada conjunto de dados possui instruções específicas de citação em seu arqu
   title        = {[Título do Dataset]},
   year         = {YYYY},
   publisher    = {Zenodo},
-  doi          = {10.5281/zenodo.XXXXXXX},
-  url          = {https://doi.org/10.5281/zenodo.XXXXXXX}
+  doi          = {10.15468/pbxmgz},
+  url          = {https://doi.org/10.15468/pbxmgz}
 }
 ```
 
