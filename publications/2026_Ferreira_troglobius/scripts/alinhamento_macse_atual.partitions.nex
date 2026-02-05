@@ -1,0 +1,6 @@
+#nexus
+begin sets;
+    charset codon1 = 1-486\3;
+    charset codon2 = 2-486\3;
+    charset codon3 = 3-486\3;
+end;
