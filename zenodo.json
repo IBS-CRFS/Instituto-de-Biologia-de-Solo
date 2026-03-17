@@ -1,0 +1,47 @@
+{
+  "title": "Instituto de Biologia do Solo e Coleção de Referência da Fauna de Solos - Repositório de Dados",
+  "description": "Repositório institucional contendo conjuntos de dados, metadados, scripts e materiais suplementares relacionados a estudos de biodiversidade do solo e fauna edáfica. Os dados seguem padrões internacionais como Darwin Core e são disponibilizados sob licenças abertas para promover transparência, reprodutibilidade e ciência aberta.",
+  "upload_type": "dataset",
+
+  "creators": [
+    {
+      "name": "Zeppelini, Douglas",
+      "affiliation": "Instituto de Biologia do Solo",
+      "orcid": "0000-0002-9026-1129"
+    }
+  ],
+
+  "contributors": [
+    {
+      "name": "Instituto de Biologia do Solo e Coleção de Referência da Fauna de Solos",
+      "type": "HostingInstitution"
+    }
+  ],
+
+  "keywords": [
+    "soil biodiversity",
+    "soil fauna",
+    "Collembola",
+    "Darwin Core",
+    "open data",
+    "taxonomy",
+    "soil ecology",
+    "biological collections"
+  ],
+
+  "license": "CC-BY-4.0",
+
+  "communities": [
+    {
+      "identifier": "biodiversity"
+    }
+  ],
+
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/nathanufpb/Instituto-de-Biologia-de-Solo",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ]
+}
